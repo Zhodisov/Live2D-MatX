@@ -1,54 +1,44 @@
 {
-	"Version": 3,
-	"FileReferences": {
-		"Moc": "deadbeat.moc3",
-		"Textures": [
-			"deadbeat.2048/jodis.png"
-		],
-		"Physics": "deadbeat.physics3.json",
-		"DisplayInfo": "deadbeat.cdi3.json",
-		"Expressions": [
-			{
-				"Name": "blush",
-				"File": "blush.exp3.json"
-			},
-			{
-				"Name": "angry",
-				"File": "angry.exp3.json"
-			},
-			{
-				"Name": "sad",
-				"File": "sad.exp3.json"
-			},
-			{
-				"Name": "sparkle",
-				"File": "sparkle.exp3.json"
-			},
-			{
-				"Name": "hearteyes",
-				"File": "hearteyes.exp3.json"
-			},
-			{
-				"Name": "nervous",
-				"File": "nervous.exp3.json"
-			},
-			{
-				"Name": "lightsticks",
-				"File": "lightsticks.exp3.json"
-			}
-		]
-	},
-	"Groups": [
-		{
-			"Target": "Parameter",
-			"Name": "EyeBlink",
-			"Ids": []
-		},
-		{
-			"Target": "Parameter",
-			"Name": "LipSync",
-			"Ids": []
-		}
-	],
-	"HitAreas": []
+    "Version": 3,
+    "FileReferences": {
+        "Moc": "deadbeat.moc3",
+        "Textures": [
+            "deadbeat.2048/jodis.png"
+        ],
+        "Physics": "deadbeat.physics3.json",
+        "DisplayInfo": "deadbeat.cdi3.json",
+        "Expressions": [
+            {"name": "neutral", "file": "expressions/neutral.exp3.json"},
+            {"name": "angry", "file": "expressions/angry.exp3.json"},
+            {"name": "sad", "file": "expressions/sad.exp3.json"},
+            {"name": "sparkle", "file": "expressions/sparkle.exp3.json"},
+            {"name": "hearteyes", "file": "expressions/hearteyes.exp3.json"},
+            {"name": "nervous", "file": "expressions/nervous.exp3.json"}
+        ]
+    },
+    "Groups": [
+        {
+            "Target": "Parameter",
+            "Name": "EyeBlink",
+            "Ids": []
+        },
+        {
+            "Target": "Parameter",
+            "Name": "LipSync",
+            "Ids": []
+        }
+    ],
+    "HitAreas": [],
+    "motions": {
+        "idle": [
+            {"file": "motions/idle_00.mtn", "fade_in": 2000, "fade_out": 2000},
+            {"file": "motions/idle_01.mtn", "fade_in": 2000, "fade_out": 2000},
+            {"file": "motions/idle_02.mtn", "fade_in": 2000, "fade_out": 2000}
+        ],
+        "tap_body": [
+            {"file": "motions/tapBody_00.mtn", "sound": "sounds/tapBody_00.mp3"},
+            {"file": "motions/tapBody_01.mtn", "sound": "sounds/tapBody_01.mp3"},
+            {"file": "motions/tapBody_02.mtn", "sound": "sounds/tapBody_02.mp3"}
+        ]
+    }
 }
