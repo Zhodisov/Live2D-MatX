@@ -8,12 +8,13 @@
         "Physics": "deadbeat.physics3.json",
         "DisplayInfo": "deadbeat.cdi3.json",
         "Expressions": [
-            {"name": "neutral", "file": "expressions/neutral.exp3.json"},
-            {"name": "angry", "file": "expressions/angry.exp3.json"},
-            {"name": "sad", "file": "expressions/sad.exp3.json"},
-            {"name": "sparkle", "file": "expressions/sparkle.exp3.json"},
-            {"name": "hearteyes", "file": "expressions/hearteyes.exp3.json"},
-            {"name": "nervous", "file": "expressions/nervous.exp3.json"}
+            {"Name": "neutral", "File": "blush.exp3.json"},
+            {"Name": "anger", "File": "angry.exp3.json"},
+            {"Name": "disgust", "File": "angry.exp3.json"}, 
+            {"Name": "fear", "File": "nervous.exp3.json"},
+            {"Name": "joy", "File": "hearteyes.exp3.json"},
+            {"Name": "sadness", "File": "sad.exp3.json"},
+            {"Name": "surprise", "File": "sparkle.exp3.json"}
         ]
     },
     "Groups": [
@@ -31,14 +32,10 @@
     "HitAreas": [],
     "motions": {
         "idle": [
-            {"file": "motions/idle_00.mtn", "fade_in": 2000, "fade_out": 2000},
-            {"file": "motions/idle_01.mtn", "fade_in": 2000, "fade_out": 2000},
-            {"file": "motions/idle_02.mtn", "fade_in": 2000, "fade_out": 2000}
+            {"file": "lightstick.motion3.json", "fade_in": 2000, "fade_out": 2000}
         ],
         "tap_body": [
-            {"file": "motions/tapBody_00.mtn", "sound": "sounds/tapBody_00.mp3"},
-            {"file": "motions/tapBody_01.mtn", "sound": "sounds/tapBody_01.mp3"},
-            {"file": "motions/tapBody_02.mtn", "sound": "sounds/tapBody_02.mp3"}
+            {"file": "lightstick.motion3.json", "sound": "sounds/tapBody_00.mp3"}
         ]
     }
 }
